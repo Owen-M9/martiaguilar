@@ -3,12 +3,12 @@ import SocialLinks from "@/components/SocialLinks";
 
 export default function Footer() {
   return (
-    <footer className="flex flex-col md:flex-row md:justify-between items-center gap-6 px-6 py-8 mt-auto">
+    <footer className="relative flex flex-col md:flex-row md:justify-between items-center gap-6 px-6 py-8 mt-auto">
       <p className="text-gray-400 text-sm">
         © 2026 Marti Aguilar. Todos los derechos reservados.
       </p>
 
-      <div className="flex gap-6">
+      <div className="flex gap-6 md:absolute md:left-1/2 md:-translate-x-1/2">
         <Link href="/" className="hover:text-white">
           Inicio
         </Link>
@@ -21,10 +21,6 @@ export default function Footer() {
       </div>
 
       <SocialLinks />
-
-      <a href="mailto:marti@ejemplo.com" className="text-gray-400 text-sm">
-        marti@ejemplo.com
-      </a>
     </footer>
   );
 }

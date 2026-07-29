@@ -10,11 +10,11 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className="flex items-center justify-between px-6 py-4">
+      <nav className="relative flex items-center justify-between px-6 py-4">
         <div className="h-10 px-4 rounded-full bg-white flex items-center justify-center text-black font-bold whitespace-nowrap">
           Marti Aguilar
         </div>
-        <div className=" hidden md:flex gap-6">
+        <div className=" hidden md:flex gap-6 md:absolute md:left-1/2 md:-translate-x-1/2">
           <NavLink href="/"> Inicio</NavLink>
           <NavLink href="/cursos">Coming Soon</NavLink>
           <NavLink href="/contacto">Contacto</NavLink>
