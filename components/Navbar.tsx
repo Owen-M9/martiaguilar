@@ -18,7 +18,8 @@ export default function Navbar() {
           </div>
           <div className=" hidden md:flex gap-6 md:absolute md:left-1/2 md:-translate-x-1/2">
             <NavLink href="/"> Inicio</NavLink>
-            <NavLink href="/cursos">Coming Soon</NavLink>
+            <NavLink href="/cursos">Cursos</NavLink>
+            <NavLink href="/asesorias">Asesorías 1:1</NavLink>
             <NavLink href="/contacto">Contacto</NavLink>
           </div>
           <div className="flex items-center gap-4">
@@ -45,7 +46,10 @@ export default function Navbar() {
             Inicio
           </NavLink>
           <NavLink href="/cursos" onClick={() => setIsMenuOpen(false)}>
-            Coming Soon
+            Cursos
+          </NavLink>
+          <NavLink href="/asesorias" onClick={() => setIsMenuOpen(false)}>
+            Asesorías 1:1
           </NavLink>
           <NavLink href="/contacto" onClick={() => setIsMenuOpen(false)}>
             Contacto
