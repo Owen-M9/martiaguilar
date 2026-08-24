@@ -2,7 +2,9 @@ import {
   SiInstagram,
   SiYoutube,
   SiTiktok,
+  SiPinterest,
 } from "@icons-pack/react-simple-icons";
+import { FaLinkedin } from "react-icons/fa6";
 
 export default function SocialLinks() {
   return (
@@ -28,6 +30,21 @@ export default function SocialLinks() {
       >
         <SiYoutube />
       </a>
+      <a
+      href="https://www.linkedin.com/in/martina-aguilar/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <FaLinkedin />
+      </a>
+      <a
+      href="https://www.pinterest.com/martiaguilar99/"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <SiPinterest />
+    </a>
     </div>
   );
 }
+
