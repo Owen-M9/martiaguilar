@@ -1,9 +1,11 @@
 import Link from "next/link";
 import SocialLinks from "@/components/SocialLinks";
+import Container from "./Container";
 
 export default function Footer() {
   return (
-    <footer className="relative flex flex-col md:flex-row md:justify-between items-center gap-6 px-6 py-8 mt-auto">
+    <footer className="py-8 mt-auto">
+      <Container className="relative flex flex-col md:flex-row md:justify-between items-center gap-6">
       <p className="text-gray-400 text-sm">
         © 2026 Marti Aguilar. Todos los derechos reservados.
       </p>
@@ -21,6 +23,7 @@ export default function Footer() {
       </div>
 
       <SocialLinks />
+      </Container>
     </footer>
   );
 }
