@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section className="px-6 py-8 md:py-12 lg:py-16">
+    <section className="px-6 py-8 md:py-12 lg:py-16 border-t border-white/[10%]">
       <div className="relative mx-auto max-w-2xl aspect-[3/2]">
         <Image
           src="/images/hero-placeholder.jpeg"
