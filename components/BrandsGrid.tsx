@@ -4,7 +4,7 @@ import { brandRows } from "@/data/brands";
 
 export default function BrandsGrid() {
   return (
-    <section className="py-16">
+    <section className="py-16 border-t border-white/[10%]">
       <Container>
         <h2 className="text-2xl font-bold text-center mb-10">
           Marcas con las que colaboré
