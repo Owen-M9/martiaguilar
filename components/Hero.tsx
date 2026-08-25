@@ -8,6 +8,7 @@ export default function Hero() {
           src="/images/hero-placeholder.jpeg"
           alt="Marti Aguilar"
           className="object-cover"
+          priority
           fill
           sizes="(min-width: 672px) 672px, 100vw"
         />
