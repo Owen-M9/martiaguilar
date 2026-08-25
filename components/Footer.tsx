@@ -4,25 +4,28 @@ import Container from "./Container";
 
 export default function Footer() {
   return (
-    <footer className="py-8 mt-auto">
+    <footer className="py-8 mt-auto border-t border-white/[10%]">
       <Container className="relative flex flex-col md:flex-row md:justify-between items-center gap-6">
-      <p className="text-gray-400 text-sm">
-        © 2026 Marti Aguilar. Todos los derechos reservados.
-      </p>
+        <p className="text-gray-400 text-sm">
+          © 2026 Marti Aguilar. Todos los derechos reservados.
+        </p>
 
-      <div className="flex gap-6 md:absolute md:left-1/2 md:-translate-x-1/2">
-        <Link href="/" className="hover:text-white">
-          Inicio
-        </Link>
-        <Link href="/cursos" className="hover:text-white">
-          Coming Soon
-        </Link>
-        <Link href="/contacto" className="hover:text-white">
-          Contacto
-        </Link>
-      </div>
+        <div className="flex gap-6 md:absolute md:left-1/2 md:-translate-x-1/2">
+          <Link href="/" className="hover:text-white">
+            Inicio
+          </Link>
+          <Link href="/cursos" className="hover:text-white">
+            Cursos
+          </Link>
+          <Link href="/asesorias" className="hover:text-white">
+            Asesorías 1:1
+          </Link>
+          <Link href="/contacto" className="hover:text-white">
+            Contacto
+          </Link>
+        </div>
 
-      <SocialLinks />
+        <SocialLinks />
       </Container>
     </footer>
   );
