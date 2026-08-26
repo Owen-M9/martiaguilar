@@ -7,11 +7,11 @@ interface BrandLogoProps {
 
 export default function BrandLogo({ brand }: BrandLogoProps) {
   return (
-    <div className="relative h-20 w-20 sm:h-24 sm:w-24 overflow-hidden rounded-full">
+    <div className="relative h-20 w-20 sm:h-24 sm:w-24 overflow-hidden rounded-full border border-white/10 bg-white/5">
       <Image
         src={brand.logo}
         alt={brand.name}
-        className="object-cover"
+        className="object-contain"
         sizes="96px"
         fill
       />
