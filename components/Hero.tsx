@@ -1,8 +1,13 @@
+"use client";
+
+import { useState } from "react";
 import Image from "next/image";
 
 export default function Hero() {
+  const [isRevealed, setIsRevealed] = useState(false);
+
   return (
-    <section className="px-6 py-8 md:py-12 lg:py-16 border-t border-white/[10%]">
+    <section className="px-6 py-8 md:py-12 lg:py-16 relative overflow-hidden border-t border-white/[10%]">
       <div className="relative mx-auto max-w-2xl aspect-[3/2]">
         <Image
           src="/images/hero-placeholder.jpeg"
@@ -23,6 +28,19 @@ export default function Hero() {
           </p>
         </div>
       </div>
+      <Image
+        src="/images/Cookie-logo.PNG"
+        alt="Cookie"
+        className={`absolute bottom-0 right-4 transition-transform duration-300 cursor-pointer ${
+          isRevealed ? "translate-y-0" : "translate-y-[65%]"
+        } ${!isRevealed ? "animate-bounce" : ""}`}
+        priority
+        width={280}
+        height={280}
+        onMouseEnter={() => setIsRevealed(true)}
+        onMouseLeave={() => setIsRevealed(false)}
+        onClick={() => setIsRevealed((prev) => !prev)}
+      />
     </section>
   );
 }
