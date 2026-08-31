@@ -24,27 +24,26 @@ export default function SocialLinks() {
         <SiTiktok />
       </a>
       <a
-        href="https://www.youtube.com/@martiaguilar"
+        href="https://www.youtube.com/@martiaguilar?sub_confirmation=1"
         target="_blank"
         rel="noopener noreferrer"
       >
         <SiYoutube />
       </a>
       <a
-      href="https://www.linkedin.com/in/martina-aguilar/"
+        href="https://www.linkedin.com/in/martina-aguilar/"
         target="_blank"
         rel="noopener noreferrer"
       >
         <FaLinkedin />
       </a>
       <a
-      href="https://www.pinterest.com/martiaguilar99/"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      <SiPinterest />
-    </a>
+        href="https://www.pinterest.com/martiaguilar99/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <SiPinterest />
+      </a>
     </div>
   );
 }
-
