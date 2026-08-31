@@ -11,17 +11,23 @@ export default function Footer() {
         </p>
 
         <div className="flex gap-6 md:absolute md:left-1/2 md:-translate-x-1/2">
-          <Link href="/" className="hover:text-white">
+          <Link href="#hero" className="hover:text-white">
             Inicio
           </Link>
-          <Link href="/cursos" className="hover:text-white">
-            Cursos
+          <Link href="#about-me" className="hover:text-white">
+            About me
           </Link>
-          <Link href="/asesorias" className="hover:text-white">
+          <Link href="#collabs" className="hover:text-white">
+            Collabs
+          </Link>
+          <Link href="#asesorias" className="hover:text-white">
             Asesorías 1:1
           </Link>
-          <Link href="/contacto" className="hover:text-white">
-            Contacto
+          <Link href="#ebook" className="hover:text-white">
+            E-book
+          </Link>
+          <Link href="#marcas" className="hover:text-white">
+            Marcas
           </Link>
         </div>
 

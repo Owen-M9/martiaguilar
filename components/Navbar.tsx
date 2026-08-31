@@ -17,10 +17,12 @@ export default function Navbar() {
             Marti Aguilar
           </div>
           <div className=" hidden md:flex gap-6 md:absolute md:left-1/2 md:-translate-x-1/2">
-            <NavLink href="/"> Inicio</NavLink>
-            <NavLink href="/cursos">Cursos</NavLink>
-            <NavLink href="/asesorias">Asesorías 1:1</NavLink>
-            <NavLink href="/contacto">Contacto</NavLink>
+            <NavLink href="#hero"> Inicio</NavLink>
+            <NavLink href="#about-me">About me</NavLink>
+            <NavLink href="#collabs">Collabs</NavLink>
+            <NavLink href="#asesorias">Asesorías 1:1</NavLink>
+            <NavLink href="#ebook">E-book</NavLink>
+            <NavLink href="#marcas">Marcas</NavLink>
           </div>
           <div className="flex items-center gap-4">
             <button
@@ -41,18 +43,24 @@ export default function Navbar() {
       {isMenuOpen && (
         <Container className="md:hidden flex flex-col items-end gap-4 pb-4">
           {" "}
-          <NavLink href="/" onClick={() => setIsMenuOpen(false)}>
+          <NavLink href="#hero" onClick={() => setIsMenuOpen(false)}>
             {" "}
             Inicio
           </NavLink>
-          <NavLink href="/cursos" onClick={() => setIsMenuOpen(false)}>
-            Cursos
+          <NavLink href="#about-me" onClick={() => setIsMenuOpen(false)}>
+            About me
           </NavLink>
-          <NavLink href="/asesorias" onClick={() => setIsMenuOpen(false)}>
+          <NavLink href="#collabs" onClick={() => setIsMenuOpen(false)}>
+            Collabs
+          </NavLink>
+          <NavLink href="#asesorias" onClick={() => setIsMenuOpen(false)}>
             Asesorías 1:1
           </NavLink>
-          <NavLink href="/contacto" onClick={() => setIsMenuOpen(false)}>
-            Contacto
+          <NavLink href="#ebook" onClick={() => setIsMenuOpen(false)}>
+            E-book
+          </NavLink>
+          <NavLink href="#marcas" onClick={() => setIsMenuOpen(false)}>
+            Marcas
           </NavLink>
           <SocialLinks />
         </Container>

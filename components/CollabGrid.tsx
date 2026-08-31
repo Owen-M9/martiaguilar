@@ -28,7 +28,10 @@ export default function CollabGrid() {
   );
 
   return (
-    <section className="px-6 py-16 bg-white/[3%] relative z-10 border-t border-white/[10%]">
+    <section
+      className="px-6 py-16 bg-white/[3%] relative z-10 border-t border-white/[10%]"
+      id="collabs"
+    >
       <h2 className="text-2xl font-bold text-center mb-10">Colaboraciones</h2>
       <div className="flex gap-6 overflow-x-auto snap-x snap-mandatory px-6 pb-4 min-h-[650px] items-center">
         {collaborations.map((collaboration) => (

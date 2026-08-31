@@ -7,7 +7,10 @@ export default function Hero() {
   const [isRevealed, setIsRevealed] = useState(false);
 
   return (
-    <section className="px-6 py-8 md:py-12 lg:py-16 relative overflow-hidden border-t border-white/[10%]">
+    <section
+      className="px-6 py-8 md:py-12 lg:py-16 relative overflow-hidden border-t border-white/[10%]"
+      id="hero"
+    >
       <div className="relative mx-auto max-w-2xl aspect-[3/2]">
         <Image
           src="/images/hero-placeholder.jpeg"
