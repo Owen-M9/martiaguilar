@@ -32,8 +32,9 @@ export default function Hero() {
         src="/images/Cookie-logo.PNG"
         alt="Cookie"
         className={`absolute bottom-0 right-4 transition-transform duration-300 cursor-pointer ${
-          isRevealed ? "translate-y-0" : "translate-y-[65%]"
-        } ${!isRevealed ? "animate-bounce" : ""}`}
+          isRevealed ? "translate-y-0" : "translate-y-[51%]"
+        }`}
+        // ${!isRevealed ? "animate-bounce" : ""} es para que la imagen rebote
         priority
         width={280}
         height={280}
