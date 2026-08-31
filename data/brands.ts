@@ -25,5 +25,5 @@ export const brandRows: Brand[][] = [
         { id: 13, name: "Mostaza", logo: "/images/brands/Mostaza-logo.png" },
         { id: 14, name: "Nestlé Argentina", logo: "/images/brands/Nestle-Argentina-logo.png" },
         { id: 15, name: "Miniso Argentina", logo: "/images/brands/Miniso-Argentina-logo.png" },
-        { id: 16, name: "Johnnie Walker", logo: "/images/brands/Johnnie-Walker-logo.jpeg" },
+        { id: 16, name: "Johnnie Walker", logo: "/images/brands/Johnnie-Walker-logo.png" },
     ]];

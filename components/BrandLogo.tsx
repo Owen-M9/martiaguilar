@@ -1,18 +1,23 @@
-import { Brand } from "@/data/brands";
 import Image from "next/image";
 
 interface BrandLogoProps {
-  brand: Brand;
+  src: string;
+  alt: string;
+  size?: "sm" | "md";
 }
 
-export default function BrandLogo({ brand }: BrandLogoProps) {
+export default function BrandLogo({ src, alt, size = "md" }: BrandLogoProps) {
+  const sizeClasses = size === "sm" ? "h-16 w-16" : "h-20 w-20 sm:h-24 sm:w-24";
+
   return (
-    <div className="relative h-20 w-20 sm:h-24 sm:w-24 overflow-hidden rounded-full border border-white/10 bg-white/5">
+    <div
+      className={`relative ${sizeClasses} overflow-hidden rounded-full border border-white/10 bg-white/5`}
+    >
       <Image
-        src={brand.logo}
-        alt={brand.name}
+        src={src}
+        alt={alt}
         className="object-contain"
-        sizes="96px"
+        sizes={size === "sm" ? "64px" : "96px"}
         fill
       />
     </div>

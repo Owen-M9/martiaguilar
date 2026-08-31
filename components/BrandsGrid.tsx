@@ -11,7 +11,7 @@ export default function BrandsGrid() {
         </h2>
         <div className="md:hidden grid grid-cols-4 place-items-center gap-6">
           {brandRows.flat().map((brand) => (
-            <BrandLogo key={brand.id} brand={brand} />
+            <BrandLogo key={brand.id} src={brand.logo} alt={brand.name} />
           ))}
         </div>
 
@@ -19,7 +19,7 @@ export default function BrandsGrid() {
           {brandRows.map((row, rowIndex) => (
             <div key={rowIndex} className="flex flex-wrap justify-center gap-6">
               {row.map((brand) => (
-                <BrandLogo key={brand.id} brand={brand} />
+                <BrandLogo key={brand.id} src={brand.logo} alt={brand.name} />
               ))}
             </div>
           ))}
