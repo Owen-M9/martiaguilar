@@ -2,6 +2,7 @@
 
 // import { useState } from "react";
 import Image from "next/image";
+import Badge from "@/components/Badge";
 import Container from "@/components/Container";
 import Polaroid from "@/components/Polaroid";
 import SocialLinks from "@/components/SocialLinks";
@@ -16,9 +17,7 @@ export default function Hero() {
     <section className="py-12 md:py-24 relative overflow-hidden bg-blush" id="hero">
       <Container className="grid grid-cols-1 gap-12 md:grid-cols-2">
         <div className="flex flex-col items-start gap-5.5">
-          <p className="rounded-full border-[2.5px] border-wine bg-butter px-4 py-1.75 text-[13px] font-bold uppercase tracking-[0.4px] text-wine">
-            Content creator
-          </p>
+          <Badge color="butter">Content creator</Badge>
           <h1>
             <Image
               src="/images/logo/logo-wordmark.png"
