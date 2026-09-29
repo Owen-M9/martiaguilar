@@ -20,11 +20,11 @@ export default function Footer() {
           <Link href="#collabs" className="hover:text-white">
             Collabs
           </Link>
-          <Link href="#asesorias" className="hover:text-white">
-            Asesorías 1:1
-          </Link>
           <Link href="#ebook" className="hover:text-white">
             E-book
+          </Link>
+          <Link href="#asesorias" className="hover:text-white">
+            Asesorías 1:1
           </Link>
           <Link href="#marcas" className="hover:text-white">
             Marcas

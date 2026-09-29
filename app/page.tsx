@@ -9,8 +9,8 @@ export default function Home() {
       <Hero />
       <PlaceholderSection id="about-me" title="About me" />
       <CollabGrid />
-      <PlaceholderSection id="asesorias" title="Asesorías 1:1" />
       <PlaceholderSection id="ebook" title="E-book" />
+      <PlaceholderSection id="asesorias" title="Asesorías 1:1" />
       <BrandsGrid />
     </main>
   );
