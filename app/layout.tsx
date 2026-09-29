@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Big_Shoulders, Poppins } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 const poppins = Poppins({
@@ -32,7 +31,6 @@ export default function RootLayout({
       className={`${poppins.variable} ${bigShoulders.variable} h-full antialiased scroll-smooth`}
     >
       <body className="min-h-full flex flex-col">
-        <Navbar />
         {children}
         <Footer />
       </body>
