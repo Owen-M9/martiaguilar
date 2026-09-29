@@ -1,10 +1,10 @@
 "use client";
 
-import { useState } from "react";
+// import { useState } from "react";
 import Image from "next/image";
 
 export default function Hero() {
-  const [isRevealed, setIsRevealed] = useState(false);
+  // const [isRevealed, setIsRevealed] = useState(false);
 
   return (
     <section
@@ -31,6 +31,8 @@ export default function Hero() {
           </p>
         </div>
       </div>
+      {/* Easter egg de Cookie, oculto temporalmente */}
+      {/*
       <Image
         src="/images/Cookie-logo.PNG"
         alt="Cookie"
@@ -45,6 +47,7 @@ export default function Hero() {
         onMouseLeave={() => setIsRevealed(false)}
         onClick={() => setIsRevealed((prev) => !prev)}
       />
+      */}
     </section>
   );
 }
