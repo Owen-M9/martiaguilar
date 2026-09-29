@@ -3,6 +3,7 @@
 // import { useState } from "react";
 import Image from "next/image";
 import Container from "@/components/Container";
+import Polaroid from "@/components/Polaroid";
 import SocialLinks from "@/components/SocialLinks";
 
 const buttonBase =
@@ -13,7 +14,7 @@ export default function Hero() {
 
   return (
     <section className="py-12 md:py-24 relative overflow-hidden bg-blush" id="hero">
-      <Container className="grid grid-cols-1 md:grid-cols-2">
+      <Container className="grid grid-cols-1 gap-12 md:grid-cols-2">
         <div className="flex flex-col items-start gap-5.5">
           <p className="rounded-full border-[2.5px] border-wine bg-butter px-4 py-1.75 text-[13px] font-bold uppercase tracking-[0.4px] text-wine">
             Content creator
@@ -46,6 +47,18 @@ export default function Hero() {
             </a>
           </div>
           <SocialLinks variant="circle" />
+        </div>
+        <div className="relative mx-auto aspect-[520/620] w-full max-w-130">
+          <Polaroid
+            src="/images/Marti_Aguilar/Hero_2.jpg"
+            alt="Foto de Marti Aguilar"
+            className="absolute top-0 right-0 w-[65.4%] rotate-7 shadow-[7px_7px_0_var(--color-berry)]"
+          />
+          <Polaroid
+            src="/images/Marti_Aguilar/Hero_1.jpg"
+            alt="Foto de Marti Aguilar"
+            className="absolute bottom-0 left-0 z-10 w-[65.4%] -rotate-4 shadow-[9px_9px_0_var(--color-berry)]"
+          />
         </div>
       </Container>
       {/* Easter egg de Cookie, oculto temporalmente */}
