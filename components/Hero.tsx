@@ -8,7 +8,7 @@ export default function Hero() {
 
   return (
     <section
-      className="px-6 py-8 md:py-12 lg:py-16 relative overflow-hidden border-t border-white/[10%]"
+      className="px-6 py-8 md:py-12 lg:py-16 relative overflow-hidden bg-blush"
       id="hero"
     >
       <div className="relative mx-auto max-w-2xl aspect-[3/2]">
