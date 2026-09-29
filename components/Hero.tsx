@@ -12,6 +12,11 @@ export default function Hero() {
       className="px-6 py-8 md:py-12 lg:py-16 relative overflow-hidden bg-blush"
       id="hero"
     >
+      <div className="mb-6 flex justify-center">
+        <p className="rounded-full border-[2.5px] border-wine bg-butter px-4 py-1.75 text-[13px] font-bold uppercase tracking-[0.4px] text-wine">
+          Content creator
+        </p>
+      </div>
       <div className="relative mx-auto max-w-2xl aspect-[3/2]">
         <Image
           src="/images/hero-placeholder.jpeg"
