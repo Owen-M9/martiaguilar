@@ -2,6 +2,7 @@
 
 // import { useState } from "react";
 import Image from "next/image";
+import SocialLinks from "@/components/SocialLinks";
 
 export default function Hero() {
   // const [isRevealed, setIsRevealed] = useState(false);
@@ -30,6 +31,9 @@ export default function Hero() {
             decida colocar aca a modo de introducción sobre Marti.
           </p>
         </div>
+      </div>
+      <div className="mt-6 flex justify-center">
+        <SocialLinks variant="circle" />
       </div>
       {/* Easter egg de Cookie, oculto temporalmente */}
       {/*

@@ -34,9 +34,24 @@ const socials = [
   },
 ];
 
-export default function SocialLinks() {
+const styles = {
+  plain: { container: "gap-4", link: "", iconSize: undefined },
+  circle: {
+    container: "gap-3.5",
+    link: "flex size-12 items-center justify-center rounded-full border-3 border-berry text-berry",
+    iconSize: 22,
+  },
+};
+
+export default function SocialLinks({
+  variant = "plain",
+}: {
+  variant?: "plain" | "circle";
+}) {
+  const style = styles[variant];
+
   return (
-    <div className="flex items-center gap-4">
+    <div className={`flex items-center ${style.container}`}>
       {socials.map(({ name, href, Icon }) => (
         <a
           key={name}
@@ -44,8 +59,9 @@ export default function SocialLinks() {
           target="_blank"
           rel="noopener noreferrer"
           aria-label={name}
+          className={style.link}
         >
-          <Icon />
+          <Icon size={style.iconSize} />
         </a>
       ))}
     </div>
