@@ -5,11 +5,26 @@
   --foreground: #171717;
 }
 
+@theme {
+  --color-wine: #460D27;
+  --color-berry: #850042;
+  --color-mauve: #D295B3;
+  --color-blush: #F6C6DE;
+  --color-magenta: #FF38A6;
+  --color-powder: #AFCCED;
+  --color-azure: #42B2FF;
+  --color-butter: #FBF191;
+  --color-gold: #FFD621;
+  --color-cream: #FAF6E3;
+  --color-bone: #EDEEE8;
+  --color-smoke: #8E9099;
+}
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-poppins);
+  --font-display: var(--font-big-shoulders);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -22,5 +37,4 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
 }
