@@ -35,20 +35,22 @@ export default function CollabCard({
         isSelected ? "w-[325px]" : "w-[160px]"
       }`}
     >
-      <div className="relative flex flex-col items-center gap-3">
-        {isSelected && (
-          <BrandLogo
-            src={collaboration.logo}
-            alt={collaboration.brand}
-            size="sm"
-          />
-        )}
+      {isSelected && (
+        <BrandLogo src={collaboration.logo} alt={collaboration.brand} size="sm" />
+      )}
+      <div
+        className={`relative w-full overflow-hidden border-wine bg-white transition-all duration-300 ${
+          isSelected
+            ? "rounded-[20px] border-3 shadow-[6px_6px_0_var(--color-wine)]"
+            : "rounded-2xl border-[2.5px] shadow-[4px_4px_0_var(--color-wine)]"
+        }`}
+      >
         <TikTokEmbed videoUrl={collaboration.videoUrl} />
+        <div className="p-3 text-center">
+          <p className="font-semibold text-wine">{collaboration.brand}</p>
+          <p className="text-wine/60 text-sm">{collaboration.campaign}</p>
+        </div>
         {!isSelected && <div className="absolute inset-0" />}
-      </div>
-      <div className="text-center">
-        <p className="font-semibold text-wine">{collaboration.brand}</p>
-        <p className="text-wine/60 text-sm">{collaboration.campaign}</p>
       </div>
     </div>
   );

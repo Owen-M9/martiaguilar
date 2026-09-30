@@ -43,7 +43,7 @@ export default function CollabGrid() {
           ya la rompimos
         </SectionTitle>
       </Container>
-      <div className="flex gap-6 overflow-x-auto snap-x snap-mandatory px-12 pb-4 min-h-[650px] items-center">
+      <div className="flex gap-6 overflow-x-auto snap-x snap-mandatory px-12 pb-4 min-h-190 items-center">
         {collaborations.map((collaboration) => (
           <CollabCard
             key={collaboration.id}
