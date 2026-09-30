@@ -47,8 +47,8 @@ export default function CollabCard({
         {!isSelected && <div className="absolute inset-0" />}
       </div>
       <div className="text-center">
-        <p className="font-semibold">{collaboration.brand}</p>
-        <p className="text-gray-400 text-sm">{collaboration.campaign}</p>
+        <p className="font-semibold text-wine">{collaboration.brand}</p>
+        <p className="text-wine/60 text-sm">{collaboration.campaign}</p>
       </div>
     </div>
   );

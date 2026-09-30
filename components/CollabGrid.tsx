@@ -1,5 +1,8 @@
 "use client";
 
+import Badge from "@/components/Badge";
+import Container from "@/components/Container";
+import SectionTitle from "@/components/SectionTitle";
 import CollabCard from "./CollabCard";
 import { collaborations } from "@/data/collaborations";
 import { useState, useSyncExternalStore } from "react";
@@ -29,11 +32,18 @@ export default function CollabGrid() {
 
   return (
     <section
-      className="px-6 py-16 bg-white/[3%] relative z-10 border-t border-white/[10%]"
+      className="py-16 bg-powder relative z-10"
       id="collabs"
     >
-      <h2 className="text-2xl font-bold text-center mb-10">Colaboraciones</h2>
-      <div className="flex gap-6 overflow-x-auto snap-x snap-mandatory px-6 pb-4 min-h-[650px] items-center">
+      <Container className="mb-10 flex flex-col items-start gap-3.5">
+        <Badge color="butter">Colaboraciones</Badge>
+        <SectionTitle shadow="azure">
+          Marcas con las que
+          <br />
+          ya la rompimos
+        </SectionTitle>
+      </Container>
+      <div className="flex gap-6 overflow-x-auto snap-x snap-mandatory px-12 pb-4 min-h-[650px] items-center">
         {collaborations.map((collaboration) => (
           <CollabCard
             key={collaboration.id}
