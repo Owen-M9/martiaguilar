@@ -1,6 +1,7 @@
 import Badge from "@/components/Badge";
 import Container from "@/components/Container";
 import Polaroid from "@/components/Polaroid";
+import SectionTitle from "@/components/SectionTitle";
 
 export default function AboutMe() {
   return (
@@ -18,11 +19,11 @@ export default function AboutMe() {
         </div>
         <div className="flex flex-col items-start gap-4.5">
           <Badge color="powder">Sobre mí</Badge>
-          <h2 className="font-display text-5xl leading-[1.05] font-bold uppercase text-berry text-shadow-[4px_4px_0_var(--color-mint)]">
+          <SectionTitle shadow="mint">
             La chica detrás
             <br />
             de la pantalla
-          </h2>
+          </SectionTitle>
           <p className="text-[17px] leading-[1.65] text-wine">
             Arranqué grabando videos con el celular por diversión y hoy es mi
             trabajo de todos los días. Me gusta contar las cosas como son, sin
