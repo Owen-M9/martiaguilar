@@ -1,12 +1,22 @@
 import Badge from "@/components/Badge";
 import Container from "@/components/Container";
+import Polaroid from "@/components/Polaroid";
 
 export default function AboutMe() {
   return (
     <section id="about-me" className="bg-cream py-12 md:py-27.5">
-      <Container className="grid grid-cols-1 md:grid-cols-5 md:gap-12">
-        <div className="md:col-span-2" />
-        <div className="flex flex-col items-start gap-4.5 md:col-span-3">
+      <Container className="grid grid-cols-1 gap-12 md:grid-cols-[2fr_3fr]">
+        <div>
+          {/* 386×460: a 420px de ancho del marco, la foto mide 460px de alto */}
+          <Polaroid
+            src="/images/Marti_Aguilar/AboutMe.png"
+            alt="Marti Aguilar"
+            photoWidth={386}
+            photoHeight={460}
+            className="mx-auto w-full max-w-105 rotate-4 shadow-[9px_9px_0_var(--color-wine)]"
+          />
+        </div>
+        <div className="flex flex-col items-start gap-4.5">
           <Badge color="powder">Sobre mí</Badge>
           <h2 className="font-display text-5xl leading-[1.05] font-bold uppercase text-berry text-shadow-[4px_4px_0_var(--color-mint)]">
             La chica detrás
