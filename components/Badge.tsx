@@ -3,6 +3,7 @@ const colors = {
   powder: "bg-powder",
   white: "bg-white",
   cream: "bg-cream",
+  bubblegum: "bg-bubblegum",
 };
 
 interface BadgeProps {

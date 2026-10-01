@@ -3,6 +3,7 @@ const shadows = {
   azure: "text-shadow-[4px_4px_0_var(--color-azure)]",
   magenta: "text-shadow-[4px_4px_0_var(--color-magenta)]",
   cream: "text-shadow-[4px_4px_0_var(--color-cream)]",
+  butter: "text-shadow-[4px_4px_0_var(--color-butter)]",
 };
 
 interface SectionTitleProps {

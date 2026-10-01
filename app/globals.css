@@ -19,6 +19,8 @@
   --color-bone: #EDEEE8;
   --color-smoke: #8E9099;
   --color-mint: #8AFFB8;
+  /* pendiente de confirmar contra el Sistema Cromático */
+  --color-bubblegum: #FE80DE;
 }
 
 @theme inline {
