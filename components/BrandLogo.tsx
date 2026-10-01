@@ -1,23 +1,36 @@
 import Image from "next/image";
 
+const sizes = {
+  sm: {
+    circle: "size-16 border-3 shadow-[3px_3px_0_var(--color-wine)]",
+    imageSizes: "64px",
+  },
+  md: {
+    circle:
+      "size-20 border-[2.5px] shadow-[4px_4px_0_var(--color-wine)] md:size-30",
+    imageSizes: "(min-width: 768px) 120px, 80px",
+  },
+};
+
 interface BrandLogoProps {
   src: string;
   alt: string;
-  size?: "sm" | "md";
+  size?: keyof typeof sizes;
 }
 
 export default function BrandLogo({ src, alt, size = "md" }: BrandLogoProps) {
-  const sizeClasses = size === "sm" ? "h-16 w-16" : "h-20 w-20 sm:h-24 sm:w-24";
+  const { circle, imageSizes } = sizes[size];
 
   return (
+    // overflow-hidden no recorta la box-shadow del propio elemento, solo su contenido.
     <div
-      className={`relative ${sizeClasses} overflow-hidden rounded-full border border-white/10 bg-white/5`}
+      className={`relative shrink-0 overflow-hidden rounded-full border-wine bg-white ${circle}`}
     >
       <Image
         src={src}
         alt={alt}
-        className="object-contain"
-        sizes={size === "sm" ? "64px" : "96px"}
+        className="object-cover"
+        sizes={imageSizes}
         fill
       />
     </div>
