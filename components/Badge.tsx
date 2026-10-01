@@ -1,6 +1,7 @@
 const colors = {
   butter: "bg-butter",
   powder: "bg-powder",
+  white: "bg-white",
 };
 
 interface BadgeProps {
