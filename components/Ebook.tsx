@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Badge from "@/components/Badge";
 import Container from "@/components/Container";
+import EbookForm from "@/components/EbookForm";
 import SectionTitle from "@/components/SectionTitle";
 
 export default function Ebook() {
@@ -20,6 +21,7 @@ export default function Ebook() {
             publicar con confianza. El puntapié inicial antes de pedir una
             asesoría 1:1.
           </p>
+          <EbookForm />
         </div>
         <div className="relative mx-auto w-full max-w-120">
           <div
