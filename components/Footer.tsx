@@ -2,36 +2,39 @@ import Link from "next/link";
 import SocialLinks from "@/components/SocialLinks";
 import Container from "./Container";
 
+const linkClass =
+  "font-display text-[13px] font-semibold uppercase tracking-[0.3px] text-wine hover:text-berry";
+
 export default function Footer() {
   return (
-    <footer className="py-8 mt-auto border-t border-white/[10%]">
-      <Container className="flex flex-col lg:flex-row lg:justify-between items-center gap-6">
-        <p className="text-gray-400 text-sm lg:shrink-0">
-          © 2026 Marti Aguilar. Todos los derechos reservados.
-        </p>
-
+    <footer className="mt-auto border-t-2 border-wine/18 bg-cream pt-6.5 pb-8">
+      <Container className="flex flex-col items-center gap-6">
         <div className="flex flex-wrap justify-center gap-x-6 gap-y-2">
-          <Link href="#hero" className="hover:text-white">
+          <Link href="#hero" className={linkClass}>
             Inicio
           </Link>
-          <Link href="#about-me" className="hover:text-white">
-            About me
+          <Link href="#about-me" className={linkClass}>
+            Sobre mí
           </Link>
-          <Link href="#collabs" className="hover:text-white">
-            Collabs
+          <Link href="#collabs" className={linkClass}>
+            Colabs
           </Link>
-          <Link href="#ebook" className="hover:text-white">
+          <Link href="#ebook" className={linkClass}>
             E-book
           </Link>
-          <Link href="#asesorias" className="hover:text-white">
-            Asesorías 1:1
+          <Link href="#asesorias" className={linkClass}>
+            Asesorías
           </Link>
-          <Link href="#marcas" className="hover:text-white">
+          <Link href="#marcas" className={linkClass}>
             Marcas
           </Link>
         </div>
 
-        <SocialLinks />
+        <SocialLinks variant="compact" />
+
+        <p className="text-center text-[13px] text-wine/65">
+          © 2026 Marti Aguilar. Todos los derechos reservados.
+        </p>
       </Container>
     </footer>
   );

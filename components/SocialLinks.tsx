@@ -41,12 +41,17 @@ const styles = {
     link: "flex size-12 items-center justify-center rounded-full border-3 border-berry text-berry",
     iconSize: 22,
   },
+  compact: {
+    container: "gap-3",
+    link: "flex size-8.5 items-center justify-center rounded-full border-2 border-wine bg-white text-wine",
+    iconSize: 17,
+  },
 };
 
 export default function SocialLinks({
   variant = "plain",
 }: {
-  variant?: "plain" | "circle";
+  variant?: keyof typeof styles;
 }) {
   const style = styles[variant];
 
