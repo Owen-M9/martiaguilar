@@ -2,8 +2,8 @@ import Hero from "@/components/Hero";
 import AboutMe from "@/components/AboutMe";
 import CollabGrid from "@/components/CollabGrid";
 import Ebook from "@/components/Ebook";
+import Asesorias from "@/components/Asesorias";
 import BrandsGrid from "@/components/BrandsGrid";
-import PlaceholderSection from "@/components/PlaceholderSection";
 
 export default function Home() {
   return (
@@ -12,7 +12,7 @@ export default function Home() {
       <AboutMe />
       <CollabGrid />
       <Ebook />
-      <PlaceholderSection id="asesorias" title="Asesorías 1:1" />
+      <Asesorias />
       <BrandsGrid />
     </main>
   );

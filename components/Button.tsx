@@ -4,6 +4,7 @@ const variants = {
   outline: "border-berry text-berry",
   success:
     "border-wine bg-mint text-wine shadow-[5px_5px_0_var(--color-wine)]",
+  muted: "border-wine bg-smoke text-cream",
 };
 
 interface ButtonProps {
