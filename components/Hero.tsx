@@ -3,12 +3,10 @@
 // import { useState } from "react";
 import Image from "next/image";
 import Badge from "@/components/Badge";
+import Button from "@/components/Button";
 import Container from "@/components/Container";
 import Polaroid from "@/components/Polaroid";
 import SocialLinks from "@/components/SocialLinks";
-
-const buttonBase =
-  "rounded-full border-3 px-6.5 py-3.5 text-base font-bold";
 
 export default function Hero() {
   // const [isRevealed, setIsRevealed] = useState(false);
@@ -35,15 +33,12 @@ export default function Hero() {
             a sumarse a la fiesta — sin perder mi esencia en el camino.
           </p>
           <div className="flex flex-wrap gap-3.5">
-            <a
-              href="#collabs"
-              className={`${buttonBase} border-wine bg-berry text-cream shadow-[5px_5px_0_var(--color-wine)]`}
-            >
+            <Button variant="primary" href="#collabs">
               Ver colaboraciones
-            </a>
-            <a href="#asesorias" className={`${buttonBase} border-berry text-berry`}>
+            </Button>
+            <Button variant="outline" href="#asesorias">
               Trabajemos juntos
-            </a>
+            </Button>
           </div>
           <SocialLinks variant="circle" />
         </div>
